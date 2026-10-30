@@ -745,6 +745,8 @@ opendmarc_spf_ipv6_explode(char *str, TXT_ARY_T *ap)
 			}
 			i+= 1;
 		}
+		if (ep == NULL)
+			break;
 		cp = ep+1;
 	}
 	ap->nstrs = 8 - i;
